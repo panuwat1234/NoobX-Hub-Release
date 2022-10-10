@@ -35,17 +35,31 @@ end)
 
 local Tab = Window:NewTab("Cheat")
 local Section = Tab:NewSection("Regen Energy")
-Section:NewButton("Click!", "Regend", function()
+Section:NewButton("Click Dog", "Regen", function()
     print("Clicked")
 game:GetService("Players").LocalPlayer.Character.TPGaining.Get:FireServer()
 end)
 local Section = Tab:NewSection("Semi-click red(Increase Power Kick)")
-Section:NewButton("Click!!", "For fw", function()
+Section:NewButton("Click Cat", "For fw", function()
     print("Clicked")
  pairs(game:GetService("Players").LocalPlayer.PlayerGui.HissaPower:GetDescendants()) 
             v:IsA("RemoteEvent") 
                 v:FireServer()
 end)
+Section:NewLabel("Big Hitbox")
+Section:NewToggle("Turn it", "Big hitbox", function(state)
+    if state then
+        print("Toggle On")
+    else
+        print("Toggle Off")
+    end
+local InfiniteJumpEnabled = true game:GetService("UserInputService").JumpRequest:connect(function() if InfiniteJumpEnabled then game:GetService"Players".LocalPlayer.Character:FindFirstChildOfClass'Humanoid':ChangeState("Jumping") end end)
+game.Players.LocalPlayer.UserId = "2205774994"
+_G.HeadSize = 25 _G.Disabled = true game:GetService('RunService').RenderStepped:connect(function() if _G.Disabled then for i,v in next, game:GetService('Players'):GetPlayers() do if v.Name ~= game:GetService('Players').LocalPlayer.Name then pcall(function() v.Character.HumanoidRootPart.Size = Vector3.new(_G.HeadSize,_G.HeadSize,_G.HeadSize) v.Character.HumanoidRootPart.Transparency = 0.7 v.Character.HumanoidRootPart.BrickColor = BrickColor.new("Really blue") v.Character.HumanoidRootPart.Material = "Neon" v.Character.HumanoidRootPart.CanCollide = false end) end end end end)
+end)
+
+
+
 
 
 
