@@ -176,6 +176,25 @@ local Tw = TweenService:Create(game.Players.LocalPlayer.Character.HumanoidRootPa
 {CFrame = CFrame.new(-270.1602783203125, 239.62811279296875, 460.0502624511719
 )}):Play()
 end)
+local Tab = Window:NewTab("More")
+local Section = Tab:NewSection("Rejoin")
+Section:NewButton("Click", "rejoin", function()
+    print("Clicked")
+local ts = game:GetService("TeleportService")
+
+local p = game:GetService("Players").LocalPlayer
+
+ 
+
+ts:Teleport(game.PlaceId, p)
+end)
+local Section = Tab:NewSection("Nothing")
+Section:NewButton("Don't click", "", function()
+    print("Clicked")
+game.Players.LocalPlayer:Kick('You got ban!!')
+end)
+
+
 
 
 
