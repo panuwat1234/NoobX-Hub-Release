@@ -168,7 +168,7 @@ local Tw = TweenService:Create(game.Players.LocalPlayer.Character.HumanoidRootPa
 end)
 local Section = Tab:NewSection("Run Quest")
 Section:NewLabel("Get the quest first!and do it too!!!")
-Section:NewLabel("you need to wait 2 sec! and then click 4 times!")
+Section:NewLabel("you need to wait 2 sec! and then click!")
 Section:NewButton("Press To Skip Run", "Ez", function()
     print("Clicked")
 local TweenService = game:GetService("TweenService")
