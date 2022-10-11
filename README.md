@@ -176,6 +176,20 @@ local Tw = TweenService:Create(game.Players.LocalPlayer.Character.HumanoidRootPa
 {CFrame = CFrame.new(-270.1602783203125, 239.62811279296875, 460.0502624511719
 )}):Play()
 end)
+local Section = Tab:NewSection("Ice cream Quest Test")
+Section:NewButton("Firstclickhere", "", function()
+    print("Clicked")
+    local TweenService = game:GetService("TweenService")
+local Tw = TweenService:Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(1, Enum.EasingStyle.Linear, Enum.EasingDirection.Out,0,false,0), 
+{CFrame = CFrame.new(-940.8973999023438, 256.8545227050781, 81.0558090209961)}):Play()
+    
+end)
+Section:NewButton("Then click here", "", function()
+    print("Clicked")
+local TweenService = game:GetService("TweenService")
+local Tw = TweenService:Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(1, Enum.EasingStyle.Linear, Enum.EasingDirection.Out,0,false,0), 
+{CFrame = CFrame.new(795.686767578125, 286.2003173828125, -263.8690185546875)}):Play()
+end)
 local Tab = Window:NewTab("More")
 local Section = Tab:NewSection("Rejoin")
 Section:NewButton("Click", "rejoin", function()
