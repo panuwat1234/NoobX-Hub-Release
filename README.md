@@ -167,16 +167,15 @@ local Tw = TweenService:Create(game.Players.LocalPlayer.Character.HumanoidRootPa
 {CFrame = CFrame.new(-1754.82568359375, 62.89125442504883, 87.36782836914062)}):Play()
 end)
 local Section = Tab:NewSection("Run Quest")
-Section:NewLabel("Get the quest first!")
+Section:NewLabel("Get the quest first!and do it too!!!")
 Section:NewLabel("you need to wait 2 sec! and then click 4 times!")
-Section:NewButton("Press Until  it Finish", "Ez", function()
+Section:NewButton("Press To Skip Run", "Ez", function()
     print("Clicked")
 local TweenService = game:GetService("TweenService")
 local Tw = TweenService:Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(1, Enum.EasingStyle.Linear, Enum.EasingDirection.Out,0,false,0), 
 {CFrame = CFrame.new(-270.1602783203125, 239.62811279296875, 460.0502624511719
 )}):Play()
 end)
-
 
 
 
