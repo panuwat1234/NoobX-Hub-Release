@@ -1,5 +1,5 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-local Window = Library.CreateLib("Noobx Hub Free", "GrapeTheme")
+local Window = Library.CreateLib("Noobx Hub", "GrapeTheme")
 local Tab = Window:NewTab("Teleport")
 local Section = Tab:NewSection("-Teleport-")
 Section:NewButton("Lobby", "Tp", function()
